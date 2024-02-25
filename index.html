@@ -1,167 +1,275 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <header>
-        <div class="logo"></div>
-        <input type="checkbox" id="nav_check" hidden>
-        <nav>
-            <ul>
-                <li><a href="#home"></i> <b>Home</b></a></li>
-                <li><a href="#about"></i><b>About</b></a></li>
-                <li><a href="#education"><b>Education</b></a></li>
-                <li><a href="#skills"><b>Skills</b></a></li>
-                <li><a href="#contact"><b>Contact</b></a></li>
-            </ul>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+      <!-- Font Awesome -->
+     
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+      
+      <!-- AOS -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      />
+      <!-- Glidejs -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css"
+      />
+      <!-- Custom StyleSheet -->
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+      <title>Portfolio Website</title>
+    </head>
+    <body>
+      <!-- Header -->
+      <video id="myVideo" autoplay muted loop>
+        <source src="blackb.mp4" type="video/mp4">
+        <source src="your-video.webm" type="video/webm">
+      </video>
+      
+      <header id="home" class="header">
+        <!-- Navigation -->
+        <nav class="nav">
+          <div class="navigation container">
+            <div class="logo">
+              <h1>Portfolio<span>.</span></h1>
+            </div>
+
+            <div class="menu">
+              <div class="top-nav">
+                <div class="logo">
+                  
+                </div>
+                <div class="close">
+                  <i class="fas fa-times"></i>
+                </div>
+              </div>
+
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a href="#home" class="nav-link scroll-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link scroll-link">About</a>
+                </li>
+              
+                <li class="nav-item">
+                  <a href="#skills" class="nav-link scroll-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#education" class="nav-link scroll-link">Education</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link scroll-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="hamburger">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
         </nav>
+        <!-- abtme sector-->
+        <div class="hero">
+          <h3  data-aos="fade-left" data-aos-duration="3000">Hello, my name is</h3>
+          <h1 data-aos="fade-right" data-aos-duration="3000">Bhumika Bet</h1>
+          
+          <h4 data-aos="fade-left" data-aos-duration="3000">And I'm Currently a <span id="type1"></span></h4>
+        
+        </div>
+
+
+        
       </header>
 
-     <div id="menu" class="fas fa-bars"></div>
+      <!-- Main sector-->
+      <section class="section about" id="about">
+        <div class="title">
+          <h1>About me</h1>
+        </div>
 
-  <section class="home" id="home">
-     
-        <h1> Hi I'm &nbsp;<span>Bhumika </span></h1>
-        <img src="PROFILE.jpeg" alt="" srcset="">
-        <p>I'm looking forward to working in a challenging position in a reputable
-           organization where i can learn new skills,broaden my knowledge, and apply what i have learned</p>
+        <div class="about-center container">
+          <div class="left" data-aos="fade-right" data-aos-duration="2000">
+            <img src="PROFILE.jpeg" alt="" />
+          </div>
+          <div class="right" data-aos="fade-left" data-aos-duration="2000">
+            <h1>I'm Alem a <span id="type2"></span></h1>
+            <p>Hailing from Solapur, India, I'm an ambitious CSE student with a passion for weaving code into innovative solutions. 
+              My multilingual
+               fluency, spanning Telugu, Marathi, Hindi, and English, allows me to connect with diverse communities through technology.
+            </p>
+            <p>
+              Fueled by ambition and a thirst for growth, I'm eager to embark on a professional journey where I can contribute my skills, expand my knowledge, and become part of something truly impactful. I seek a company that fosters collaboration, values creativity, and provides the fertile ground for my engineering skills to blossom.
+
+Let's connect and explore how my unique perspective, multilingual abilities, and unwavering dedication can contribute to your team's success.
+            </p>
             
-        <a href="#about"><button class="btn">About Me <i class="fas fa-user"></i></button></a>
-        
-    </section>
+          </div>
+        </div>
+      </section>
 
-    <section class="about" id="about">
-      <div><span><h1 id="abtme">About Me</h1></span></div>
-        
-        
-         <div class="row">
-           <div class="info">
-             <h3><span>Name:</span>Bhumika Shrinivas Bet </h3>
-             <h3><span>E-mail :</span>betbhumika123@gmail.com</h3>
-             <h3><span>Contact:</span>8080553875 </h3>
-             <h3><span>DOB:</span>19/07/2003 </h3>
-             <h3><span>location:</span>Solapur,India </h3>
-             <h3><span>Languages:</span>English,Hindi,Marathi,Telegu
-             </div>
-           
-           
-           
-           </div>
-         </section>
-
-  
-    <section class="education" id="education">
-        <h1 class="heading">My<span> Education</span></h1>
-        <div class="box-container">
-            <!-- Add education boxes as needed -->
-            <div class="box">
-                <i class="fas fa-graduation-cap"></i>
-                <span>2025</span>
-                <h3>Engineering</h3>
-                <p>Shri Siddeshwar Womens College Of Engineering,Solapur</p>
-            </div>
-            <div class="box">
-                <i class="fas fa-graduation-cap"></i>
-                <span>2022</span>
-                <h3>Diploma </h3>
-                <p>Shri Siddeshwar Womens Polytechnic,Solapur</p>
-             </div>
-             <div class="box">
-                <i class="fas fa-graduation-cap"></i>
-                <span>2019</span>
-                <h3>School</h3>
-                <p>Valentine Circle English Medium school,Solapur</p>
-             </div>
-            
-             
-            </div>
-    </section>
-
+      <!-- abut me -->
     
-    <section class="skills" id="skills">
-      
-      <div class="container">
-       
-        <span id="myskill"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My &nbsp;skills</b></span>
-      
-        
-      </div>
-      <div class="skills">
-        <div class="skill">
-          <div class="skill-name"></span>HTML</div>
-          <div class="skill-bar">
-            <div class="skill-per" per="90%" style="max-width:90%"></div>
-          </div>
+
+      <!-- Skills sector -->
+      <section class="section skills" id="skills">
+        <div class="title">
+          <h1>My Skills</h1>
         </div>
-      
-        <div class="skill">
-          <div class="skill-name">CSS</div>
-          <div class="skill-bar">
-            <div class="skill-per" per="70%" style="max-width:70%"></div>
+
+        <div class="skills-center container">
+          <div class="skills-left" data-aos="fade-right" data-aos-duration="2000">
+            <div class="skills-box">
+              <h4>HTML5</h4>
+              <div class="skills-ilt">
+                <div class="skills-bar html"></div>
+                <span>95%</span>
+              </div>
+            </div>
+            <div class="skills-box">
+              <h4>CSS</h4>
+              <div class="skills-ilt">
+                <div class="skills-bar css"></div>
+                <span>85%</span>
+              </div>
+            </div>
+            <div class="skills-box">
+              <h4>JavaScript</h4>
+              <div class="skills-ilt">
+                <div class="skills-bar javascript"></div>
+                <span>60%</span>
+              </div>
+            </div>
+            <div class="skills-box">
+              <h4>Python</h4>
+              <div class="skills-ilt">
+                <div class="skills-bar nodejs"></div>
+                <span>60%</span>
+              </div>
+            </div>
+
+            <div class="skills-box">
+              <h4>C</h4>
+              <div class="skills-ilt">
+                <div class="skills-bar c"></div>
+                <span>75%</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="skill">
-          <div class="skill-name">js</div>
-          <div class="skill-bar">
-            <div class="skill-per" per="60%" style="max-width:60%"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill-name">c</div>
-          <div class="skill-bar">
-            <div class="skill-per" per="70%" style="max-width:70%"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill-name">python</div>
-          <div class="skill-bar">
-            <div class="skill-per" per="50%" style="max-width:50%"></div>
-          </div>
-        </div>
-      
-        
-   </section>
-    <section id="contact">
-      <div class="box-wrapper">
-          <div class="info-wrap">
-              <h2 class="info-title">My Contact Information</h2>
-              <h3 class="info-sub-title"></h3>
-              <ul class="info-details">
-                  <li>
-                      <i class="fas fa-phone-alt"></i>
-                      <span>Phone:</span> <a >8080553875</a>
-                  </li>
-                  <li>
-                      <i class="fas fa-paper-plane"></i>
-                      <span>Email:</span>
-                      <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=betbhumika123@gmail.com">betbhumika123@gmail.com</a>
-                    </li>
-                    
-                 </ul>
-              <ul class="social-icons">
-                  
-                  <li><a href="https://github.com/BhumikaBet"><i class="fa-brands fa-github-alt"></i></a></li>
-                  <li><a href="https://twitter.com/bet_bhumika"><i class="fa-brands fa-x-twitter"></i></li>
-                  <li><a href="https://www.linkedin.com/in/bhumika-bet-b38a8027a/"></i><i class="fa-brands fa-linkedin-in"></i></a></li>
-                  <li><a href="https://www.instagram.com/v_nidhi05?igsh=cHNrdWhwM3VoY2Jk" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                  
-              </ul>
+
+          <div class="right" data-aos="fade-left" data-aos-duration="2000">
+            <h3>Exploring Creativity with Code:</h3>
+            <p>
               
+
+              As a newbie coder, I've had a blast creating things like a FarmBuddy app, a website for helping customers, and
+               now my own portfolio site. It's like a digital adventure! I'm not stopping there, though—I want to learn even more
+                languages to make cooler stuff. Think of it like learning new paint colors for my coding canvas. Whether it's spicing 
+                up what I've got or
+               starting a whole new project, I'm all in for the fun of coding and making things awesome! Let's keep the creativity flowing!
+
+      
+            </p>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- educaton sector -->
+      <section class="education" id="education">
+        <h1 class="heading" data-aos="fade-right" data-aos-duration="2000">My<span> Education</span></h1>
+        <div class="box-container"data-aos="fade-right" data-aos-duration="2000">
+          <!-- Add education boxes as needed -->
+          <div class="box" data-aos="fade-right" data-aos-duration="2000">
+              <i class="fas fa-graduation-cap"></i>
+              <span>2025</span>
+              <h3>Engineering</h3>
+              <p>Shri Siddeshwar Womens College Of Engineering,Solapur</p>
+          </div>
+          <div class="box" data-aos="fade-right" data-aos-duration="2000">
+              <i class="fas fa-graduation-cap"></i>
+              <span>2022</span>
+              <h3>Diploma </h3>
+              <p>Shri Siddeshwar Womens Polytechnic,Solapur</p>
+           </div>
+           <div class="box" data-aos="fade-right" data-aos-duration="2000">
+              <i class="fas fa-graduation-cap"></i>
+              <span>2019</span>
+              <h3>School</h3>
+              <p>Valentine Circle English Medium school,Solapur</p>
+           </div>
+          
+           
+          </div>
+    </section>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact" id="contact">
+        <div class="title">
+          <h1>Contact me</h1>
+        </div>
+
+        <div class="contact-center container">
+          <div class="left" data-aos="fade-down-right" data-aos-duration="2000">
+            <h2>Get in Touch</h2>
+            <div>
+              <span class="icon"><i class="fas fa-user"></i></span>
+              <span class="content">
+                <h3>Name</h3>
+                <span>Bhumika Bet</span>
+              </span>
+            </div>
+
+            <div>
+              <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+              <span class="content">
+                <h3>Address</h3>
+                <span>Solapur,India</span>
+              </span>
+            </div>
+
+            <div>
+              <span class="icon"><i class="fa-solid fa-at"></i></span>
+              <span class="content">
+                <h3>Email</h3>
+                <span>betbhumika123@gmail.com</span>
+              </span>
+            </div>
           </div>
           
-          </div>
-      </div>
-  </section>
+          <div class="icons" data-aos="fade-down-right" data-aos-duration="2000">
+            <span><a href="https://github.com/BhumikaBet"><i class="fab fa-github-alt"></i></a></span>
+            <span><a href="https://www.instagram.com/v_nidhi05?igsh=cHNrdWhwM3VoY2Jk" target="_blank"><i class="fab fa-instagram"></i></a></span>
+            <span><a href="https://twitter.com/bet_bhumika"><i class="fa-brands fa-twitter"></i></a></span>
+            <span><a href="https://www.linkedin.com/in/bhumika-bet-b38a8027a/"><i class="fa-brands fa-linkedin-in"></i></a></span>
+          
+
+          
+        </div>
+        
+        </div>
+        
+      </section>
+
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+
+      <!-- AOS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+      <!-- Typeit -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
+      <!-- GSAP -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+      <!-- Glidejs -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+      <!-- Custom Script -->
+      <script src="script.js"></script>
+    </body>
+  </html>
