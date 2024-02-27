@@ -20,8 +20,8 @@ video {
   position: fixed;
   top: 0;
   left: 0;
-  width:100%;
-  height:auto;
+  width:140%;
+  height:180%;
   z-index: -1; /* Place behind content */
 }
 
